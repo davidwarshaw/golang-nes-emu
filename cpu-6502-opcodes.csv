@@ -1,0 +1,257 @@
+opcode,instruction,mode,bytes,cycles
+00,BRK,Implied,1,7
+01,ORA,"Indirect, X",2,6
+02,,,,
+03,,,,
+04,,,,
+05,ORA,Zero Page,2,3
+06,ASL,Zero Page,2,5
+07,,,,
+08,PHP ,N/A,1,3
+09,ORA,Immediate,2,2
+0A,ASL,Accumulator,1,2
+0B,,,,
+0C,,,,
+0D,ORA,Absolute,3,4
+0E,ASL,Absolute,3,6
+0F,,,,
+10,BPL ,Branch,2,2
+11,ORA,"Indirect, Y",2,5
+12,,,,
+13,,,,
+14,,,,
+15,ORA,"Zero Page, X",2,4
+16,ASL,"Zero Page, X",2,6
+17,,,,
+18,CLC ,N/A,1,2
+19,ORA,"Absolute, Y",3,4
+1A,,,,
+1B,,,,
+1C,,,,
+1D,ORA,"Absolute, X",3,4
+1E,ASL,"Absolute, X",3,7
+1F,,,,
+20,JSR,Absolute,3,6
+21,AND,"Indirect, X",2,6
+22,,,,
+23,,,,
+24,BIT,Zero Page,2,3
+25,AND,Zero Page,2,3
+26,ROL,Zero Page,2,5
+27,,,,
+28,PLP ,N/A,1,4
+29,AND,Immediate,2,2
+2A,ROL,Accumulator,1,2
+2B,,,,
+2C,BIT,Absolute,3,4
+2D,AND,Absolute,3,4
+2E,ROL,Absolute,3,6
+2F,,,,
+30,BMI ,Branch,2,2
+31,AND,"Indirect, Y",2,5
+32,,,,
+33,,,,
+34,,,,
+35,AND,"Zero Page, X",2,4
+36,ROL,"Zero Page, X",2,6
+37,,,,
+38,SEC ,N/A,1,2
+39,AND,"Absolute, Y",3,4
+3A,,,,
+3B,,,,
+3C,,,,
+3D,AND,"Absolute, X",3,4
+3E,ROL,"Absolute, X",3,7
+3F,,,,
+40,RTI,Implied,1,6
+41,EOR,"Indirect, X",2,6
+42,,,,
+43,,,,
+44,,,,
+45,EOR,Zero Page,2,3
+46,LSR,Zero Page,2,5
+47,,,,
+48,PHA ,N/A,1,3
+49,EOR,Immediate,2,2
+4A,LSR,Accumulator,1,2
+4B,,,,
+4C,JMP,Absolute,3,3
+4D,EOR,Absolute,3,4
+4E,LSR,Absolute,3,6
+4F,,,,
+50,BVC ,Branch,2,2
+51,EOR,"Indirect, Y",2,5
+52,,,,
+53,,,,
+54,,,,
+55,EOR,"Zero Page, X",2,4
+56,LSR,"Zero Page, X",2,6
+57,,,,
+58,CLI ,N/A,1,2
+59,EOR,"Absolute, Y",3,4
+5A,,,,
+5B,,,,
+5C,,,,
+5D,EOR,"Absolute, X",3,4
+5E,LSR,"Absolute, X",3,7
+5F,,,,
+60,RTS,Implied,1,6
+61,ADC,"Indirect, X",2,6
+62,,,,
+63,,,,
+64,,,,
+65,ADC,Zero Page,2,3
+66,ROR,Zero Page,2,5
+67,,,,
+68,PLA ,N/A,1,4
+69,ADC,Immediate,2,2
+6A,ROR,Accumulator,1,2
+6B,,,,
+6C,JMP,Indirect,3,5
+6D,ADC,Absolute,3,4
+6E,ROR,Absolute,3,6
+6F,,,,
+70,BVS ,Branch,2,2
+71,ADC,"Indirect, Y",2,5
+72,,,,
+73,,,,
+74,,,,
+75,ADC,"Zero Page, X",2,4
+76,ROR,"Zero Page, X",2,6
+77,,,,
+78,SEI ,N/A,1,2
+79,ADC,"Absolute, Y",3,4
+7A,,,,
+7B,,,,
+7C,,,,
+7D,ADC,"Absolute, X",3,4
+7E,ROR,"Absolute, X",3,7
+7F,,,,
+80,,,,
+81,STA,"Indirect, X",2,6
+82,,,,
+83,,,,
+84,STY,Zero Page,2,3
+85,STA,Zero Page,2,3
+86,STX,Zero Page,2,3
+87,,,,
+88,DEY ,N/A,1,2
+89,,,,
+8A,TXA ,N/A,1,2
+8B,,,,
+8C,STY,Absolute,3,4
+8D,STA,Absolute,3,4
+8E,STX,Absolute,3,4
+8F,,,,
+90,BCC ,Branch,2,2
+91,STA,"Indirect, Y",2,6
+92,,,,
+93,,,,
+94,STY,"Zero Page, X",2,4
+95,STA,"Zero Page, X",2,4
+96,STX,"Zero Page, Y",2,4
+97,,,,
+98,TYA ,N/A,1,2
+99,STA,"Absolute, Y",3,5
+9A,TXS ,N/A,1,2
+9B,,,,
+9C,,,,
+9D,STA,"Absolute, X",3,5
+9E,,,,
+9F,,,,
+A0,LDY,Immediate,2,2
+A1,LDA,"Indirect, X",2,6
+A2,LDX,Immediate,2,2
+A3,,,,
+A4,LDY,Zero Page,2,3
+A5,LDA,Zero Page,2,3
+A6,LDX,Zero Page,2,3
+A7,,,,
+A8,TAY ,N/A,1,2
+A9,LDA,Immediate,2,2
+AA,TAX ,N/A,1,2
+AB,,,,
+AC,LDY,Absolute,3,4
+AD,LDA,Absolute,3,4
+AE,LDX,Absolute,3,4
+AF,,,,
+B0,BCS ,Branch,2,2
+B1,LDA,"Indirect, Y",2,5
+B2,,,,
+B3,,,,
+B4,LDY,"Zero Page, X",2,4
+B5,LDA,"Zero Page, X",2,4
+B6,LDX,"Zero Page, Y",2,4
+B7,,,,
+B8,CLV ,N/A,1,2
+B9,LDA,"Absolute, Y",3,4
+BA,TSX ,N/A,1,2
+BB,,,,
+BC,LDY,"Absolute, X",3,4
+BD,LDA,"Absolute, X",3,4
+BE,LDX,"Absolute, Y",3,4
+BF,,,,
+C0,CPY,Immediate,2,2
+C1,CMP,"Indirect, X",2,6
+C2,,,,
+C3,,,,
+C4,CPY,Zero Page,2,3
+C5,CMP,Zero Page,2,3
+C6,DEC,Zero Page,2,5
+C7,,,,
+C8,INY ,N/A,1,2
+C9,CMP,Immediate,2,2
+CA,DEX ,N/A,1,2
+CB,,,,
+CC,CPY,Absolute,3,4
+CD,CMP,Absolute,3,4
+CE,DEC,Absolute,3,6
+CF,,,,
+D0,BNE ,Branch,2,2
+D1,CMP,"Indirect, Y",2,5
+D2,,,,
+D3,,,,
+D4,,,,
+D5,CMP,"Zero Page, X",2,4
+D6,DEC,"Zero Page, X",2,6
+D7,,,,
+D8,CLD ,N/A,1,2
+D9,CMP,"Absolute, Y",3,4
+DA,,,,
+DB,,,,
+DC,,,,
+DD,CMP,"Absolute, X",3,4
+DE,DEC,"Absolute, X",3,7
+DF,,,,
+E0,CPX,Immediate,2,2
+E1,SBC,"Indirect, X",2,6
+E2,,,,
+E3,,,,
+E4,CPX,Zero Page,2,3
+E5,SBC,Zero Page,2,3
+E6,INC,Zero Page,2,5
+E7,,,,
+E8,INX ,N/A,1,2
+E9,SBC,Immediate,2,2
+EA,NOP,Implied,1,2
+EB,,,,
+EC,CPX,Absolute,3,4
+ED,SBC,Absolute,3,4
+EE,INC,Absolute,3,6
+EF,,,,
+F0,BEQ ,Branch,2,2
+F1,SBC,"Indirect, Y",2,5
+F2,,,,
+F3,,,,
+F4,,,,
+F5,SBC,"Zero Page, X",2,4
+F6,INC,"Zero Page, X",2,6
+F7,,,,
+F8,SED ,N/A,1,2
+F9,SBC,"Absolute, Y",3,4
+FA,,,,
+FB,,,,
+FC,,,,
+FD,SBC,"Absolute, X",3,4
+FE,INC,"Absolute, X",3,7
+FF,,,,
